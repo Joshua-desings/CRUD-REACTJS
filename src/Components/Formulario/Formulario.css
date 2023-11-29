@@ -20,9 +20,8 @@ label {
 input[type="text"],
 input[type="number"],
 input[type="email"],
-/* Estilo para el campo de correo electrónico */
 textarea {
-    width: 90%;
+    width: 90%; 
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
@@ -60,4 +59,16 @@ button[type="reset"]:hover {
 input:invalid,
 textarea:invalid {
     border-color: #ff0000;
+}
+
+/* Estilos para dispositivos más pequeños (ej. tablet, teléfono) */
+@media (max-width: 767px) {
+    .formulario {
+        max-width: 90%; /* Cambiado a 90% para un mejor ajuste en pantallas más pequeñas */
+    }
+    button[type="submit"],
+    button[type="reset"] {
+        width: 100%; /* Cambiado a 100% para ocupar todo el ancho en pantallas más pequeñas */
+        margin-left: 0; /* Alinear a la izquierda en pantallas más pequeñas */
+    }
 }

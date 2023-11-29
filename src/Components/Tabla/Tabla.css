@@ -38,3 +38,15 @@
   padding: 16px;
   color: #888;
 }
+
+/* Estilos para dispositivos más pequeños (ej. tablet, teléfono) */
+@media (max-width: 767px) {
+  .table th,
+  .table td {
+    padding: 8px; /* Reducir el relleno en pantallas más pequeñas */
+  }
+
+  .table button {
+    padding: 6px 12px; /* Reducir el relleno de los botones en pantallas más pequeñas */
+  }
+}
