@@ -1,0 +1,74 @@
+/* Estilos para el formulario */
+.formulario {
+    max-width: 300px;
+    margin: 35px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    width: 90%; 
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilos para los botones */
+button[type="submit"],
+button[type="reset"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #ccc;
+}
+
+/* Estilos al pasar el mouse sobre los botones */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="reset"]:hover {
+    background-color: #af0505;
+    /* Cambia el color de fondo a rojo al pasar el mouse */
+}
+
+/* Estilos para los errores de validación */
+input:invalid,
+textarea:invalid {
+    border-color: #ff0000;
+}
+
+/* Estilos para dispositivos más pequeños (ej. tablet, teléfono) */
+@media (max-width: 767px) {
+    .formulario {
+        max-width: 90%; /* Cambiado a 90% para un mejor ajuste en pantallas más pequeñas */
+    }
+    button[type="submit"],
+    button[type="reset"] {
+        width: 100%; /* Cambiado a 100% para ocupar todo el ancho en pantallas más pequeñas */
+        margin-left: 0; /* Alinear a la izquierda en pantallas más pequeñas */
+    }
+}

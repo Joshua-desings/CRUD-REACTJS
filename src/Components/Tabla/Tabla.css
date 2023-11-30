@@ -1,0 +1,52 @@
+/* Estilos para la tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para los botones en la tabla */
+.table button {
+  padding: 8px 16px;
+  margin-right: 8px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.table button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la sección de "No hay datos" */
+.table td[colSpan="8"] {
+  text-align: center;
+  padding: 16px;
+  color: #888;
+}
+
+/* Estilos para dispositivos más pequeños (ej. tablet, teléfono) */
+@media (max-width: 767px) {
+  .table th,
+  .table td {
+    padding: 8px; /* Reducir el relleno en pantallas más pequeñas */
+  }
+
+  .table button {
+    padding: 6px 12px; /* Reducir el relleno de los botones en pantallas más pequeñas */
+  }
+}
